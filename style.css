@@ -1,0 +1,225 @@
+*{
+  margin :0;
+}
+.top-container {
+  background-color: #f8f9f9;
+  width: 100%;
+  display: flow-root;
+  position: relative;
+}
+.intro {
+  float:left;
+  position: relative;
+}
+.introduction{
+    position:absolute;
+    top : 100px;
+    left: 180px;
+    font-family: "Comic Neue";
+    font-weight: bolder;
+}
+.about{
+  padding: 20px;
+  position: absolute;
+  width: 600px;
+  height: 500px;
+  top: 50px;
+  left: 800px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 40px;
+  line-height: 2;
+  font-size: 20px;
+  font-family: sans-serif, Arial;
+  font-weight: bold;
+  color:#7f7e7e
+}
+.about h1{
+  color:#d4c481
+}
+h1{
+    font-size:40px;
+    padding-right: 40px;
+}
+.introduction p{
+    color: #f6a800;
+    text-align: right;
+}
+.hover {
+    --c:linear-gradient(#f6a800 0 0); /* update the color here */
+    
+    padding-bottom: .15em;
+    background: var(--c), var(--c);
+    background-size: .3em .1em;
+    background-position:50% 100%;
+    background-repeat: no-repeat;
+    transition: .3s linear, background-size .3s .2s linear;
+  }
+  .hover:hover {
+    background-size: 40% .1em;
+    background-position: 10% 100%, 90% 100%;
+  }
+  
+  .middle-container {
+    margin: 50px auto;
+    width: 90%;
+    height: 700px;
+    max-width: calc(100% - 60px);
+    background: #fffbaf;
+    position: relative;
+    border: 2px solid #111;
+    border-radius: 20px;
+    display: flow-root;
+    
+  }
+  
+  .middle-container::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 20px;
+    left: 20px;
+    border-radius: inherit;
+    background: repeating-linear-gradient(
+      45deg,
+      #d4c481,
+      #d4c481 2px,
+      transparent 2px,
+      transparent 6px
+    );
+    transition: all 0.3s ease;
+  }
+  
+  .middle-container + .middle-container {
+    border-radius: 30px;
+    height: 400px;
+  }
+  
+  .middle-container:hover::before {
+    top: 40px;
+    left: 40px;
+  }
+  
+  .middle-container + .middle-container:hover::before {
+    width: calc(100% + 40px);
+    height: calc(100% + 40px);
+    top: -20px;
+    left: -20px;
+  }
+
+  .a,.b,.c{
+    font-size: 40px;
+    padding-top: 5px;
+    min-width: 50px;
+    min-height: 50px;
+    text-align: center;
+    font-family: "Comic Neue";
+    align-items: center;
+    margin-bottom:10px;
+  }
+  
+  .coding{
+    border-radius: 100%;
+    height: 150px;
+    float: left;
+    margin-right: 20px;
+  }
+  .programming-languages{
+    line-height: 1;
+    font-size: 20px;
+    list-style-type: None;
+    text-align: left;
+    font-weight: bold;
+
+  }
+  .programming-languages li:nth-child(1){
+    color:#f6a800;
+    font-weight: bolder;
+    
+  }
+    .programming-languages li:nth-child(2){
+        color: #fd6500;
+        font-weight: bolder;
+    }
+  .programming-languages li:nth-child(3){
+    color: #f6a800 ;
+    font-weight: bolder;
+  }
+    .programming-languages li:nth-child(4){
+        color: #fd6500;
+        font-weight: bolder;
+    }
+    .programming-languages li:nth-child(5){
+        color: #269b14;
+        font-weight: bolder;
+    }
+
+
+  .binge{
+    width: 200px;
+    float: right;
+    margin-left: 20px;
+  }
+  .Binge{
+    font-size:22px;
+    color: #f6a800 ;
+    
+    font-family: "Comic Neue";
+    font-weight: bold;
+    text-align: right;
+  }
+  hr {
+    border: dotted 10px;
+    border-color: #ffdd94;
+    border-bottom: none;
+  width: 4%;
+  margin: 100px auto;
+  
+  }
+  .middle-container :nth-child(1){
+    font-weight: bolder;
+    color:#d69200;
+
+  }
+  .b{
+    margin-top:50px;
+    margin-left: 100px;
+    line-height: 2;
+    background-color: #f6f4eb;
+    width : 50%;
+    border: 5px solid rgb(250, 129, 17);
+    border-radius: 20px;
+    display: flow-root;
+  }
+  .c{
+    margin-left: 100px;
+    padding-bottom: 0px;
+    line-height: 2;    background-color: #f6f4eb;
+    width : 50%;
+    border: 5px solid rgb(250, 129, 17);
+    border-radius: 20px;
+  }
+  .a{
+    
+    background-color: #ecdda3;
+    border-radius: 20px 20px 0px 0px;
+  }
+  .bottom-container{
+    position :sticky;
+    height: 100px;
+    width: 100%;
+    background-color: #f6a800;
+    margin: 0;
+    text-align: center;
+    line-height: 3;
+  }
+  .footer-link{
+    font-size: 20px;
+    margin-left: 30px;
+    text-decoration: none;
+    font: "sans-serif";
+    font-weight: bolder;
+    color: #ffffff;
+  }
